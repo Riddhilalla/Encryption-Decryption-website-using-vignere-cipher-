@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+   
+    .navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .logo{
+      width: 120px;
+      cursor: pointer;
+  }
+  .navbar ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+  }
+  .navbar ul li a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase; 
+  }
+  .navbar ul li::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+      width: 100%;
+  }
+
+  .about {
+    
+   margin-top: -150px;
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+ 
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+ 
+.about p {
+    
+    font-size: 1rem;
+    color: #e2e2e2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+ 
+
+ 
+
+ 
+.about-info .paras {
+    font-size: 15px;
+    margin: 0 2rem;
+    text-align: center;
+    margin-top: -150px;
+    flex: 0.8;
+    margin-right: 30px;
+  }
+  .eg img {
+    width: 600px;
+    height: auto;
+    justify-self: center;
+   
+}
+.eg2 img {
+    width: 350px;
+    height: auto;
+    justify-self: center;
+   
+}

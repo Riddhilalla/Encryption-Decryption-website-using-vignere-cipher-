@@ -1,0 +1,75 @@
+<html>
+  <head>
+      <title>
+          HOME
+      </title>
+      <link rel="stylesheet" href="working.css">
+  </head>
+  <body>
+    
+      <div class="banner">
+          <div class="navbar">
+              <img src="blank.png" class="logo">
+              <ul>
+                <li><a href="home.html">home</a></li>
+                  <li><a href="about.html">about</a></li>
+                 
+              </ul>
+          </div>
+          <section class="about">
+            <h1>How Exactly Does This Cipher Work?</h1>
+          
+            
+                <div class="paras">
+        <div class="para1">
+         <p>
+            To fully understand the Vigenère cipher, we must first understand the working of the Caeser cipher. 
+         </p>
+        </div>
+         <br>
+        
+         <div class="para2">
+         <p >
+            The Caeser cipher is named after Julius Caeser, who used it to better protect his private correspondence. He would send encoded messages to his generals in the field by shifting each letter forward by three places. For example, A would be written as D, B as E, C as F and so on. So ‘CAESAR’ would be written as ‘FDHWDU’
+         </p>
+         </div>
+         <br>
+         <div class="para3">
+            <p >
+                However, the Caesar cipher, though named after Julius Caeser, is not limited to his preferred pattern. It entails shifting of each letter by any desired number of places, either forwards or backwards. For instance, one could shift each letter one place back. In this case, ‘CAESAR’ would now appear as ‘BZDRZQ’
+            </p>
+            </div>
+            <br>
+            <div class="para4">
+                <p >
+                    The Vigenère cipher, put simply, is a collection of Caesar ciphers programmed by a keyword. To make our understanding simpler, let us first assign numbers to each letter of the alphabet, starting from 0.    </p>
+                </div>
+                <br>
+            <div class="eg">
+                <img src="table.png" alt="table">
+             </div>
+             <br>
+             <div class="para5">
+                <p >
+                    
+For our first example, let us take a three-letter word and a three-letter keyword to make it simple.
+The word we need to encode is ABC. The keyword we use is CAT.Fisrt we align the plaintext with the keyword. 
+In this case A will be aligned to C, B will be aligned to A and C will be aligned to T. A-C,B-A,C-T.
+ Now we replace the keyword with its numerical equivalent , C-2,A-1 and T-19. Now by looking at each pairing we move A forward by 2 places and get the letter C. We move B forward by 0 places we get B. We move C forward by 19 places we get V. Therfore the encrypted text is "CBV"
+    </p>
+                </div>
+                <br>
+                <div class="para6">
+                    <p >
+                        To decode texts, we follow the same logic but instead of moving x places forward, we move x places back. 
+Now, obviously, we cannot design a keyword corresponding equal to the length of our plaintext each time we wish to encrypt a message. That would be extremely inconvenient, especially for longer messages. 
+The procedure followed in this cipher, is to repeat the keyword till it matches the length of the plaintext. Shown below is a example for better understanding!
+  </p>
+                    </div>
+                    <br>
+                    <div class="eg2">
+                        <img src="eg.png" alt="table">
+                     </div>
+            </div>
+        </section>
+    </div>
